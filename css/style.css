@@ -1,0 +1,307 @@
+
+.custom-size {
+  font-size: clamp(2rem, 3vw, 5rem);
+}
+
+.custom-size-1 {
+  font-size: clamp(4rem, 6vw, 10rem);
+}
+
+.custom-size-2 {
+  font-size: clamp(0.7rem, 2vw, 1.5rem);
+  line-height: 1.5;
+  padding: 0.1rem;
+}
+
+@media (max-width: 576px) {
+  .logo-img {
+    width: 12rem;
+    margin-bottom: 2rem;
+  }
+}
+
+.guest-btn {
+  width: clamp(300px, 60vw, 300px);
+  height: 50px;
+  font-size: 1rem;
+}
+
+@media (max-width: 576px) {
+  .google-btn-wrapper {
+    transform: scale(1);
+  }
+
+  .guest-btn {
+    height: 45px;
+    font-size: 0.95rem;
+    margin-bottom: 20rem;
+  }
+}
+
+
+.responsive-form {
+  width: clamp(300px, 60vw, 400px); 
+  margin: 0 auto;
+}
+
+
+.responsive-form input.form-control-lg {
+  font-size: clamp(0.9rem, 2vw, 1.2rem);
+  height: clamp(2.5rem, 6vh, 3rem);
+  padding: clamp(0.5rem, 1vh, 0.75rem) clamp(0.75rem, 2vw, 1.25rem);
+}
+.ua-logo {
+  width: clamp(3rem, 6vw, 5rem);
+  height: auto;
+  margin-left: clamp(0.1rem, 2vw, 3rem);
+  margin-right: clamp(0.5rem, 3vw, 2rem);
+}
+
+.ua-text {
+  font-size: clamp(1.2rem, 2vw, 2rem);
+  font-weight: 600;
+}
+
+.smc-text {
+  font-size: clamp(0.8rem, 2vw, 2rem);
+  font-weight: 400;
+  line-height: 1;
+}
+
+.sidebar {
+  width: 250px;
+  transform: translateX(0);
+  transition: transform 0.3s ease-in-out;
+  z-index: 1040;
+}
+
+
+@media (max-width: 991.98px) {
+  .sidebar {
+    transform: translateX(-100%);
+  }
+
+  .sidebar.show {
+    transform: translateX(0);
+  }
+  
+  .content-container {
+    margin-left: 0;
+  }
+}
+
+
+.react-calendar {
+  width: 100%!important;
+  max-width: 850px;
+  border: none;
+  font-family: 'Roboto', sans-serif;
+  font-size: 15px;
+  background: linear-gradient(135deg, #ffffff, #f9fafc);
+  border-radius: 16px;
+  padding: 20px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s ease;
+}
+
+/* Navigation (Month + Arrows) */
+.react-calendar__navigation {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 15px;
+}
+
+.react-calendar__navigation button {
+  color: #1a73e8; /* Google blue */
+  min-width: 40px;
+  background: none;
+  font-size: 17px;
+  font-weight: 600;
+  border: none;
+  cursor: pointer;
+  border-radius: 8px;
+  padding: 5px 10px;
+  transition: all 0.2s ease;
+}
+
+.react-calendar__navigation button:hover {
+  background: #e8f0fe;
+  color: #174ea6;
+}
+
+.react-calendar__navigation button:disabled {
+  color: #ccc;
+}
+
+/* Weekdays row */
+.react-calendar__month-view__weekdays {
+  text-align: center;
+  font-weight: 600;
+  color: #5f6368;
+  text-transform: uppercase;
+  font-size: 13px;
+  padding: 8px 0;
+  border-bottom: 1px solid #eaeaea;
+}
+
+/* Days */
+.react-calendar__tile {
+  min-height: 55px;
+  padding: 0.6rem 0.4rem;
+  border-radius: 10px;
+  transition: all 0.2s ease-in-out;
+  cursor: pointer;
+  position: relative;
+}
+
+.react-calendar__tile:hover {
+  background: #f1f8ff;
+  color: #1a73e8;
+  font-weight: bold;
+  transform: scale(1.05);
+}
+
+/* Today */
+.react-calendar__tile--now {
+  background: linear-gradient(135deg, #1a73e8, #4285f4) !important;
+  color: white !important;
+  font-weight: bold;
+  border-radius: 12px;
+  box-shadow: 0 3px 10px rgba(26, 115, 232, 0.3);
+}
+
+/* Selected */
+.react-calendar__tile--active {
+  background: linear-gradient(135deg, #34a853, #0f9d58) !important;
+  color: white !important;
+  border-radius: 12px;
+  box-shadow: 0 3px 10px rgba(52, 168, 83, 0.3);
+}
+
+/* Event list container */
+.event-list {
+  padding: 15px;
+  background: #ffffff;
+  border-radius: 14px;
+  margin-top: 20px;
+  box-shadow: 0 3px 15px rgba(0,0,0,0.05);
+}
+
+.event-list h6 {
+  font-weight: 700;
+  margin-bottom: 12px;
+  color: #202124;
+}
+
+.event-item {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  margin-bottom: 6px;
+  font-size: 14px;
+  padding: 6px 8px;
+  border-radius: 8px;
+  transition: background 0.2s ease;
+}
+
+.event-item:hover {
+  background: #f8f9fa;
+}
+
+.event-item .dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.btn-bs-light:hover {
+  background-color: #9d0504 !important;
+  color: white !important;
+  transform: scale(1.05); 
+};
+
+
+
+.highlighted-date {
+  position: relative;
+}
+
+.highlighted-date::after {
+  content: "";
+  position: absolute;
+  top: 4px;
+  left: 4px;
+  right: 4px;
+  bottom: 4px;
+  border-radius: 8px;
+  opacity: 0.4;
+  z-index: 0;
+};
+
+.highlighted-date::after {
+  background-color: var(--highlight-color);
+};
+
+.cardo {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin-left: 16rem;
+};
+
+.card-column {
+  break-inside: avoid;
+  margin-bottom: 2rem;
+}
+
+.events-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(22rem, 1fr));
+  gap: 2rem;
+  justify-content: center;
+}
+
+.card-wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.equal-card {
+  width: 23rem;
+  min-height: 20rem; /* Keeps card height consistent */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  overflow: hidden;
+}
+
+.equal-card img {
+  height: 180px;
+  width: 100%;
+  object-fit: cover;
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
+}
+
+.equal-card .card-body {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+/* Adjust grid for responsive equal sizing */
+.events-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(25rem, 1fr));
+  gap: 2rem;
+  justify-content: center;
+  align-items: start; /* ensures top alignment */
+}
+
+.card-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: stretch; /* ensures equal height */
+}
